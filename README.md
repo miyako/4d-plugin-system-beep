@@ -1,5 +1,5 @@
 # 4d-plugin-system-beep
-いろいろなビープ音の鳴らしたい
+いろいろなビープ音を鳴らしたい
 
 ![version](https://img.shields.io/badge/version-15%2B-D74635)
 ![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel%20|%20mac-arm%20|%20win-32%20|%20win-64&color=blue)
