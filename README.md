@@ -6,6 +6,24 @@
 [![license](https://img.shields.io/github/license/miyako/4d-plugin-system-beep)](LICENSE)
 ![downloads](https://img.shields.io/github/downloads/miyako/4d-plugin-system-beep/total)
 
+```4d
+SYSTEM BEEP(Beep SYSTEM)
+```
+
+### Windows
+
+```4d
+SYSTEM BEEP(Beep Windows ICONASTERISK)
+SYSTEM BEEP(Beep Windows ICONERROR)
+SYSTEM BEEP(Beep Windows ICONEXCLAMATION)
+SYSTEM BEEP(Beep Windows ICONHAND)
+SYSTEM BEEP(Beep Windows ICONINFORMATION)
+SYSTEM BEEP(Beep Windows ICONQUESTION)
+SYSTEM BEEP(Beep Windows ICONSTOP)
+SYSTEM BEEP(Beep Windows ICONWARNING)
+SYSTEM BEEP(Beep Windows OK)
+```
+
 ### macOS
 
 ```4d
