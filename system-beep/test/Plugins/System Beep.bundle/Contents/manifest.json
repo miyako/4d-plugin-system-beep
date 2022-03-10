@@ -1,0 +1,11 @@
+{
+	"name": "System Beep",
+	"id": 20000,
+	"commands": [
+		{
+			"theme": "System Beep",
+			"syntax": "SYSTEM BEEP(&L)",
+			"threadSafe": true
+		}
+	]
+}

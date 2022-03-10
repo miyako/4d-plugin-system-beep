@@ -1,0 +1,28 @@
+//%attributes = {}
+SYSTEM BEEP(Beep SYSTEM)
+
+
+SYSTEM BEEP(Beep Windows ICONASTERISK)
+SYSTEM BEEP(Beep Windows ICONERROR)
+SYSTEM BEEP(Beep Windows ICONEXCLAMATION)
+SYSTEM BEEP(Beep Windows ICONHAND)
+SYSTEM BEEP(Beep Windows ICONINFORMATION)
+SYSTEM BEEP(Beep Windows ICONQUESTION)
+SYSTEM BEEP(Beep Windows ICONSTOP)
+SYSTEM BEEP(Beep Windows ICONWARNING)
+SYSTEM BEEP(Beep Windows OK)
+
+SYSTEM BEEP(Beep macOS Basso)
+SYSTEM BEEP(Beep macOS Blow)
+SYSTEM BEEP(Beep macOS Bottle)
+SYSTEM BEEP(Beep macOS Frog)
+SYSTEM BEEP(Beep macOS Funk)
+SYSTEM BEEP(Beep macOS Glass)
+SYSTEM BEEP(Beep macOS Hero)
+SYSTEM BEEP(Beep macOS Morsei)
+SYSTEM BEEP(Beep macOS Ping)
+SYSTEM BEEP(Beep macOS Pop)
+SYSTEM BEEP(Beep macOS Purr)
+SYSTEM BEEP(Beep macOS Sosumi)
+SYSTEM BEEP(Beep macOS Submarine)
+SYSTEM BEEP(Beep macOS Tink)

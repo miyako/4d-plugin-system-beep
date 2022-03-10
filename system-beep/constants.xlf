@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+    <header>
+        <note>System Beep</note>
+    </header>
+    <group resname="themes">
+        <trans-unit id="" resname="5F8FBF5868CF41118EFAE96B2EDB4CD8" translate="no">
+            <source>System Beep Sound</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="5F8FBF5868CF41118EFAE96B2EDB4CD8">
+        <trans-unit d4:value="0:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.1">
+            <source>Beep Windows OK</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.2">
+            <source>Beep Windows ICONASTERISK</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.3">
+            <source>Beep Windows ICONEXCLAMATION</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.4">
+            <source>Beep Windows ICONERROR</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.5">
+            <source>Beep Windows ICONHAND</source>
+        </trans-unit>
+        <trans-unit d4:value="5:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.6">
+            <source>Beep Windows ICONINFORMATION</source>
+        </trans-unit>
+        <trans-unit d4:value="6:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.7">
+            <source>Beep Windows ICONQUESTION</source>
+        </trans-unit>
+        <trans-unit d4:value="7:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.8">
+            <source>Beep Windows ICONSTOP</source>
+        </trans-unit>
+        <trans-unit d4:value="8:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.9">
+            <source>Beep Windows ICONWARNING</source>
+        </trans-unit>
+        <trans-unit d4:value="9:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.10">
+            <source>Beep SYSTEM</source>
+        </trans-unit>
+        <trans-unit d4:value="11:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.11">
+            <source>Beep macOS Basso</source>
+        </trans-unit>
+        <trans-unit d4:value="12:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.12">
+            <source>Beep macOS Blow</source>
+        </trans-unit>
+        <trans-unit d4:value="13:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.13">
+            <source>Beep macOS Bottle</source>
+        </trans-unit>
+        <trans-unit d4:value="14:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.14">
+            <source>Beep macOS Frog</source>
+        </trans-unit>
+        <trans-unit d4:value="15:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.15">
+            <source>Beep macOS Funk</source>
+        </trans-unit>
+        <trans-unit d4:value="16:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.16">
+            <source>Beep macOS Glass</source>
+        </trans-unit>
+        <trans-unit d4:value="17:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.17">
+            <source>Beep macOS Hero</source>
+        </trans-unit>
+        <trans-unit d4:value="18:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.18">
+            <source>Beep macOS Morsei</source>
+        </trans-unit>
+        <trans-unit d4:value="19:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.19">
+            <source>Beep macOS Ping</source>
+        </trans-unit>
+        <trans-unit d4:value="20:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.20">
+            <source>Beep macOS Pop</source>
+        </trans-unit>
+        <trans-unit d4:value="21:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.21">
+            <source>Beep macOS Purr</source>
+        </trans-unit>
+        <trans-unit d4:value="22:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.22">
+            <source>Beep macOS Sosumi</source>
+        </trans-unit>
+        <trans-unit d4:value="23:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.23">
+            <source>Beep macOS Submarine</source>
+        </trans-unit>
+        <trans-unit d4:value="24:L" id="5F8FBF5868CF41118EFAE96B2EDB4CD8.24">
+            <source>Beep macOS Tink</source>
+        </trans-unit>
+    </group>
+</xliff>
