@@ -36,7 +36,7 @@ source: https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-me
 
 |value|sound|
 |:-|:-:|
-|OK|ポローン（BEEP）|
+|SYSTEM|ポローン（BEEP）|
 |ICONASTERISK|ポローン|
 |ICONERROR|ピロロン|
 |ICONEXCLAMATION|ポローン|
