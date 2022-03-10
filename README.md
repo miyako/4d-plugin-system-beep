@@ -28,6 +28,21 @@ SYSTEM BEEP(Beep Windows OK)
 
 source: https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messagebeep
 
+* Windows 10
+* 
+|value|sound|
+|:-:|:-:|
+|OK|ポローン（BEEP）|
+|ICONASTERISK|ポローン|
+|ICONERROR|ピロロン|
+|ICONEXCLAMATION|ポローン|
+|ICONHAND|ピロロン|
+|ICONINFORMATION|ピロロン|
+|ICONQUESTION|無音|
+|ICONSTOP|ピロロン|
+|ICONWARNING|ポローン|
+|OK|ポローン|
+
 ### macOS
 
 ```4d
