@@ -6,6 +6,8 @@
 [![license](https://img.shields.io/github/license/miyako/4d-plugin-system-beep)](LICENSE)
 ![downloads](https://img.shields.io/github/downloads/miyako/4d-plugin-system-beep/total)
 
+**注記**: v15-v17をサポートするため`manifest.json`は`Contents`に置かれています。
+
 ```4d
 SYSTEM BEEP(Beep SYSTEM)
 ```
