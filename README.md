@@ -46,3 +46,5 @@ SYSTEM BEEP(Beep macOS Sosumi)
 SYSTEM BEEP(Beep macOS Submarine)
 SYSTEM BEEP(Beep macOS Tink)
 ```
+
+c.f. https://developer.apple.com/documentation/appkit/nssound/1477318-soundnamed?language=objc
