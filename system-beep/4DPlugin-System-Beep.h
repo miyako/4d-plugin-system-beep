@@ -22,7 +22,8 @@ namespace beep {
 typedef enum {
     
     //windows
-    
+
+    OK = 0,
     ICONASTERISK = 1,
     ICONEXCLAMATION = 2,
     ICONERROR = 3,
@@ -56,6 +57,10 @@ typedef enum {
 
 #if VERSIONMAC
 #import <AppKit/AppKit.h>
+#endif
+
+#if VERSIONWIN
+#include "Windows.h"
 #endif
 
 #endif /* PLUGIN_SYSTEM_BEEP_H */

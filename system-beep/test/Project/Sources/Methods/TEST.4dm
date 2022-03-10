@@ -1,7 +1,6 @@
 //%attributes = {}
 SYSTEM BEEP(Beep SYSTEM)
 
-
 SYSTEM BEEP(Beep Windows ICONASTERISK)
 SYSTEM BEEP(Beep Windows ICONERROR)
 SYSTEM BEEP(Beep Windows ICONEXCLAMATION)
