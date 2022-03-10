@@ -35,7 +35,7 @@ source: https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-me
 * Windows 10
 
 |value|sound|
-|:-:|:-:|
+|:-|:-:|
 |OK|ポローン（BEEP）|
 |ICONASTERISK|ポローン|
 |ICONERROR|ピロロン|
