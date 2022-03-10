@@ -8,6 +8,10 @@
 
 **注記**: v15-v17をサポートするため`manifest.json`は`Contents`に置かれています。
 
+Windowsはビープ中のビープは再生中の音を打ち消します。
+
+macOSは非同期再生です。
+
 ```4d
 SYSTEM BEEP(Beep SYSTEM)
 ```
@@ -29,7 +33,7 @@ SYSTEM BEEP(Beep Windows OK)
 source: https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messagebeep
 
 * Windows 10
-* 
+
 |value|sound|
 |:-:|:-:|
 |OK|ポローン（BEEP）|
