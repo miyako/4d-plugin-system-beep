@@ -12,6 +12,10 @@
 
 #pragma mark -
 
+static void SYSTEM_BEEP(PA_PluginParameters params);
+
+#pragma mark -
+
 void PluginMain(PA_long32 selector, PA_PluginParameters params) {
     
 	try

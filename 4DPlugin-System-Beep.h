@@ -15,8 +15,6 @@
 
 #pragma mark -
 
-static void SYSTEM_BEEP(PA_PluginParameters params);
-
 namespace beep {
 
 typedef enum {
