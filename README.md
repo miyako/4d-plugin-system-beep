@@ -5,6 +5,76 @@
 
 # 4d-plugin-system-beep
 
+## Maintainer release workflow
+
+Both workflows are manual. **Bump version** takes `patch`, `minor`, or `major`
+on the explicitly selected branch. It checks out the dispatch's immutable
+`github.sha`, requires a clean checkout and that exact remote branch tip, and
+commits only source version metadata. Its mandatory executable pre-push guard
+requires exactly one advertised update from the selected SHA to its single-parent
+direct child, including a final check for branch advances, rewinds, deletion and
+same-result races. Pushes are non-force and never follow tags. It creates no tag,
+release, or Build dispatch. If the branch changes, dispatch again on its new tip.
+
+Run **Build** separately on the desired source commit using the Actions branch/tag
+selector; it has no inputs or default-branch restriction. Every checkout uses
+`github.sha`. The strict source `X.Y.Z` determines `vX.Y.Z` and
+`System Beep-X.Y.Z.zip` / `System Beep-X.Y.Z.dmg`. Build jobs across branches
+share the constant `release-publication` concurrency group without cancellation.
+
+Source authority is coordinated `MARKETING_VERSION` and
+`CURRENT_PROJECT_VERSION`: six settings each (three target and three project
+configurations), source `Info.plist`, and `English.lproj/InfoPlist.strings`.
+Supported Xcode references are preserved; an absent `CFBundleVersion` stays absent.
+The prior Bump header promised coordination, but its marketing-only implementation
+left current settings at `1.0.1` and localization at `1.0.0`. These are repaired to
+the existing marketing/plist authority **1.0.3**, not a new version. Rewrites
+preserve copyright 2022, BOM, individual line endings (including CR-only), file
+modes, and unrelated bytes. Prebuilt bundles/archives, dependencies, native
+project settings other than versions, manifest/schema and 4D data/counters are
+not version authorities and are not rewritten.
+
+Build retains Windows x64 MSBuild (v143, Windows SDK 10.0), universal macOS
+arm64/x86_64 Xcode configuration Default with deployment target 11.0, the
+`test/Plugins` bundle layout, Windows artifact transfer/merge, signing and strict
+verification, notarization of both archives and DMG stapling. Notarization must
+explicitly return `Accepted`. The existing six signing/notary secret names are
+unchanged. No native build, signing, notarization or 4D execution is performed
+by the local Python tests.
+
+Publication checks remote tags and authenticated, fully validated paginated
+releases (including drafts) both before native work and after all native gates.
+Authentication, 404, network, malformed-response and later-page errors stop
+publication. It POSTs a **new** tag ref at exactly the selected SHA and verifies
+it remotely, then separately POSTs a public, non-prerelease release with the
+original empty notes and uploads only to that newly returned release ID.
+No reuse, updates, deletes, clobbering, retries or rollback are performed.
+
+**Partial-state recovery:** any failure retains the tag, release and assets
+already created. Inspect the Actions log and remote state manually, including
+drafts and the exact tag SHA. A rerun intentionally refuses any existing tag or
+release, even at the same SHA. Do not delete or overwrite published state to make
+a rerun pass; choose a fresh source version through Bump version, then run Build
+separately after reviewing the retained partial release. Publication timeouts
+can leave remote state even when no successful response was received.
+
+Local validation (no production publication):
+
+```sh
+actionlint
+python3 -B -m unittest discover -s .github/tests -v
+```
+
+The helpers and lifecycle coverage are adapted from committed proxy
+`4dc9995e5523f86f4d6d4d111f89ad3f81d8fb87`, mapm
+`739178b4b8629bb03fc716fd0872355c1b758666`, apple-speech-recognizer
+`7b06cdc0657547234d67e7bb1a5756881cd2b353`, and mail-applescript
+`6c8c10ecb82618b60acb3ff1ae6df3f2cf824a6f` (quoted duplicate localization
+guard). JSMin `fb9087a70130bce570c1cf2c687e09ee931ae3e8`'s explicitly
+independent build-version contract does not apply to this repository.
+
+---
+
 A single-command 4D plugin that plays a native system alert or notification sound. On Windows it calls the Win32 `MessageBeep` API; on macOS it calls `NSBeep()` for the generic system alert, or plays one of macOS's bundled named sound effects (Basso, Glass, Ping, etc.) via `NSSound`. The command has no return value — it's fire-and-forget.
 
 | Command | Returns | Purpose |
