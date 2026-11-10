@@ -1,0 +1,23 @@
+name: Native ownership
+
+on:
+  push:
+    branches: [main, miyako-system-beep-ownership]
+    paths:
+      - '4D Plugin API/**'
+      - '4DPlugin-System-Beep.*'
+      - 'support/**'
+      - '.github/tests/ownership*'
+      - '.github/tests/test_ownership.py'
+      - '.github/workflows/ownership.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  ownership:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unsigned synthetic native ownership regression
+        run: python3 .github/tests/test_ownership.py -v
